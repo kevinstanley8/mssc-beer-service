@@ -1,4 +1,4 @@
-package web.model;
+package guru.springframework.msscbeerservice.web.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,8 +10,8 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class BeerDto {
     private UUID id;
@@ -23,4 +23,6 @@ public class BeerDto {
     private Long upc;
     private BigDecimal price;
     private Integer quantityOnHand;
+    public static class BeerDtoBuilder {};
+
 }
